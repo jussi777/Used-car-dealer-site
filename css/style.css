@@ -1,0 +1,97 @@
+.home-inner {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../images/hdr-g05116d239_1920.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.3;
+}
+
+.home-wrap h1 {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card-wrapper .card:hover {
+  cursor: pointer;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  width: 30%;
+  margin-bottom: 24px;
+}
+
+.card img {
+  max-width: 100%;
+}
+
+.car-title {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.spec-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px 20px 20px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.why-us-wrapper i {
+  font-size: 5rem;
+  color: rgb(255, 193, 7);
+}
+
+#map {
+  margin: 0 auto;
+  width: 50%;
+  height: 400px;
+}
+
+@media (max-width: 1024px) {
+  .card {
+    width: 47%;
+  }
+
+  #map {
+    width: 70%;
+  }
+}
+
+@media (max-width: 767px) {
+  .card {
+    width: 90%;
+  }
+
+  #map {
+    width: 90%;
+  }
+}
+
+@media (max-width: 425px) {
+  .home-wrap {
+    display: none;
+  }
+}
+
+@media (max-width: 376px) {
+  .spec-list {
+    flex-direction: column;
+  }
+}

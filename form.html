@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularz zakupu</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/form.css" />
+  </head>
+  <body class="bg-light">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-warning fixed-top">
+        <div class="container-fluid">
+          <a href="#" class="navbar-brand">
+            <img
+              src="images/automobile-g09ff0a79a_640.png"
+              alt=""
+              width="70"
+              height="44"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item me-3">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >Znajdź samochód</a
+                >
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link" href="#">Jak to działa?</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link" href="#">Kontakt</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="container w-60 my-5">
+      <main>
+        <div class="wrapper-price-name d-flex justify-content-between pt-5">
+          <p class="name" id="name">Wybrane auto:</p>
+          <p class="price" id="price">Cena całkowita:</p>
+        </div>
+        <div class="addictions-wrapper">
+          <div class="row d-flex justify-content-between">
+            <div class="col-lg-3 col-md-6 mb-2">
+              <div class="card">
+                <div
+                  class="card-body d-flex flex-column justify-content-between"
+                >
+                  <span class="badge rounded-pill bg-warning text-dark"
+                    >Dodane</span
+                  >
+                  <h5 class="card-title" id="additionName">Ekstra głośniki</h5>
+                  <div class="wrapper-price d-flex">
+                    <h6
+                      class="card-subtitle mb-2 me-1 text-muted"
+                      id="additionPrice"
+                    >
+                      5000
+                    </h6>
+                    <h6 class="card-subtitle mb-2 text-muted">PLN</h6>
+                  </div>
+
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  </p>
+                  <div class="button-wrapper justify-content-between">
+                    <button type="button" class="btn btn-warning" id="add">
+                      Dodaj
+                    </button>
+                    <button type="button" class="btn btn-warning" id="remove">
+                      Usuń
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-2">
+              <div class="card">
+                <div
+                  class="card-body d-flex flex-column justify-content-between"
+                >
+                  <span class="badge rounded-pill bg-warning text-dark"
+                    >Dodane</span
+                  >
+                  <h5 class="card-title" id="additionName">
+                    Dodatkowy rok gwarancji
+                  </h5>
+                  <div class="wrapper-price d-flex">
+                    <h6
+                      class="card-subtitle mb-2 me-1 text-muted"
+                      id="additionPrice"
+                    >
+                      5000
+                    </h6>
+                    <h6 class="card-subtitle mb-2 text-muted">PLN</h6>
+                  </div>
+                  <p class="card-text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  </p>
+                  <div class="button-wrapper justify-content-between">
+                    <button type="button" class="btn btn-warning" id="add">
+                      Dodaj
+                    </button>
+                    <button type="button" class="btn btn-warning" id="remove">
+                      Usuń
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-2">
+              <div class="card">
+                <div
+                  class="card-body d-flex flex-column justify-content-between"
+                >
+                  <span class="badge rounded-pill bg-warning text-dark"
+                    >Dodane</span
+                  >
+                  <h5 class="card-title" id="additionName">
+                    Podgrzewane siedzenia
+                  </h5>
+                  <div class="wrapper-price d-flex">
+                    <h6
+                      class="card-subtitle mb-2 me-1 text-muted"
+                      id="additionPrice"
+                    >
+                      10000
+                    </h6>
+                    <h6 class="card-subtitle mb-2 text-muted">PLN</h6>
+                  </div>
+                  <p class="card-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                  <div class="button-wrapper justify-content-between">
+                    <button type="button" class="btn btn-warning" id="add">
+                      Dodaj
+                    </button>
+                    <button type="button" class="btn btn-warning" id="remove">
+                      Usuń
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-2">
+              <div class="card">
+                <div
+                  class="card-body d-flex flex-column justify-content-between"
+                >
+                  <span class="badge rounded-pill bg-warning text-dark"
+                    >Dodane</span
+                  >
+                  <h5 class="card-title" id="additionName">Opony zimowe</h5>
+                  <div class="wrapper-price d-flex">
+                    <h6
+                      class="card-subtitle mb-2 me-1 text-muted"
+                      id="additionPrice"
+                    >
+                      2000
+                    </h6>
+                    <h6 class="card-subtitle mb-2 text-muted">PLN</h6>
+                  </div>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  </p>
+                  <div class="button-wrapper justify-content-between">
+                    <button type="button" class="btn btn-warning" id="add">
+                      Dodaj
+                    </button>
+                    <button type="button" class="btn btn-warning" id="remove">
+                      Usuń
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="wrapper-form d-flex justify-content-center my-5">
+          <form class="needs-validation" novalidate>
+            <div class="row">
+              <div class="col-5 col-md-3 text-center">
+                <label for="name-surname" class="form-label"
+                  >Imię i nazwisko</label
+                >
+              </div>
+              <div class="col-7">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name-surname"
+                  required
+                />
+                <div class="error-message" id="error-message-name">
+                  Wpisz imię i nazwisko
+                </div>
+              </div>
+            </div>
+            <div class="row my-3">
+              <div class="col-5 col-md-3 text-center">
+                <label for="receive-place" class="form-label"
+                  >Miejsce odbioru</label
+                >
+              </div>
+              <div class="col-7">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="receive-place"
+                  required
+                />
+                <div class="error-message" id="error-message-place">
+                  Wskaż miejsce odbioru
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-5 col-md-3 text-center">
+                <label for="delivery-date" class="form-label"
+                  >Data dostawy</label
+                >
+              </div>
+              <div class="col-7">
+                <input
+                  type="date"
+                  class="form-control"
+                  id="delivery-date"
+                  name="delivery-date"
+                />
+              </div>
+            </div>
+          </form>
+          <div class="financing mt-5 mx-5">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault"
+                id="flexRadioDefault1"
+              />
+              <label class="form-check-label" for="flexRadioDefault1">
+                Leasing
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault"
+                id="flexRadioDefault2"
+                checked
+              />
+              <label class="form-check-label" for="flexRadioDefault2">
+                Gotówka
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-between">
+          <div class="col-lg-3 col-md-3 col-5">
+            <button class="btn btn-warning btn-return">
+              <a href="/" class="btn-return">Powrót do wyboru</a>
+            </button>
+          </div>
+          <div class="col-lg-3 col-md-3 col-5">
+            <button type="submit" class="btn btn-warning btn-buy" id="buy">
+              Zakup
+            </button>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer
+      class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-4 border-top bg-dark"
+    >
+      <div class="col-md-4 d-flex align-items-center">
+        <i class="fa fa-regular fa-fish"></i>
+        <span class="text-muted">© 2022 Ryba</span>
+      </div>
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex me-5">
+        <li class="ms-3">
+          <a href="https://www.facebook.com/"
+            ><i class="fa fa-brands fa-facebook"></i
+          ></a>
+        </li>
+        <li class="ms-3">
+          <a href="https://www.instagram.com/"
+            ><i class="fa fa-brands fa-instagram"></i
+          ></a>
+        </li>
+        <li class="ms-3">
+          <a href="https://twitter.com/?lang=pl"
+            ><i class="fa fa-brands fa-twitter"></i
+          ></a>
+        </li>
+      </ul>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/93887f783c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/form.js"></script>
+  </body>
+</html>

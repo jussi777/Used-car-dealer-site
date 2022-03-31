@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  font-weight: bold;
+}
+
+footer i {
+  color: gray;
+  margin: 0.5rem;
+}
