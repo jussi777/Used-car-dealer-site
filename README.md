@@ -38,7 +38,7 @@ List the ready features here:
 
 
 ## Screenshots
-![Example screenshot](Used-car-dealer-site/images/car site.png)
+![Example screenshot](https://github.com/jussi777/Used-car-dealer-site/blob/master/images/car%20site.png)
 
 
 ## Setup
