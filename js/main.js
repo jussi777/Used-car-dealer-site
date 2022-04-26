@@ -2,11 +2,11 @@ const cardWrapper = document.querySelector(".card-wrapper");
 const brandInput = document.getElementById("brand-input");
 const productionYearInput = document.getElementById("production-year");
 const mileageInput = document.getElementById("mileage");
-const searchBtn = document.getElementById('searchBtn')
+const searchBtn = document.getElementById("searchBtn");
 
 // objects
 
-let cars = [
+const cars = [
   {
     name: "Mercedes",
     price: 35000,
@@ -162,13 +162,6 @@ function initMap() {
   });
 }
 
-////
-
-searchBtn.addEventListener('click', function (e) {
-const yearValue = productionYearInput.value;
-console.log(yearValue)
-})
-
 // sort by production year
 
 productionYearInput.addEventListener("click", function (e) {
@@ -183,50 +176,33 @@ productionYearInput.addEventListener("click", function (e) {
       break;
     case "2005-2009":
       const years0509 = range(2005, 2009);
-      for (let i = 0; i < cards.length; i++) {
-        const year = cars[i].productionYear;
-        if (years0509.indexOf(year) !== -1) {
-          cards[i].style.display = "block";
-        } else {
-          cards[i].style.display = "none";
-        }
-      }
+      displayCard(years0509);
       break;
     case "2010-2014":
       const years1014 = range(2010, 2014);
-      for (let i = 0; i < cards.length; i++) {
-        const year = cars[i].productionYear;
-        if (years1014.indexOf(year) !== -1) {
-          cards[i].style.display = "block";
-        } else {
-          cards[i].style.display = "none";
-        }
-      }
+      displayCard(years1014);
       break;
     case "2015-2019":
       const years1519 = range(2015, 2019);
-      for (let i = 0; i < cards.length; i++) {
-        const year = cars[i].productionYear;
-        if (years1519.indexOf(year) !== -1) {
-          cards[i].style.display = "block";
-        } else {
-          cards[i].style.display = "none";
-        }
-      }
+      displayCard(years1519);
       break;
     case "2020-2022":
       const years2022 = range(2020, 2022);
-      for (let i = 0; i < cards.length; i++) {
-        const year = cars[i].productionYear;
-        if (years2022.indexOf(year) !== -1) {
-          cards[i].style.display = "block";
-        } else {
-          cards[i].style.display = "none";
-        }
-      }
+      displayCard(years2022);
       break;
   }
 });
+
+const displayCard = (range) => {
+  for (let i = 0; i < cards.length; i++) {
+    const year = cars[i].productionYear;
+    if (range.indexOf(year) !== -1) {
+      cards[i].style.display = "block";
+    } else {
+      cards[i].style.display = "none";
+    }
+  }
+};
 
 // sort by mileage
 
@@ -242,47 +218,30 @@ mileageInput.addEventListener("click", function (e) {
       break;
     case "50000-100000":
       const mileage50100 = range(50000, 100000);
-      for (let i = 0; i < cards.length; i++) {
-        const mileage = cars[i].mileage;
-        if (mileage50100.indexOf(mileage) !== -1) {
-          cards[i].style.display = "block";
-        } else {
-          cards[i].style.display = "none";
-        }
-      }
+      showCard(mileage50100);
       break;
     case "101000-200000":
       const mileage101200 = range(101000, 200000);
-      for (let i = 0; i < cards.length; i++) {
-        const mileage = cars[i].mileage;
-        if (mileage101200.indexOf(mileage) !== -1) {
-          cards[i].style.display = "block";
-        } else {
-          cards[i].style.display = "none";
-        }
-      }
+      showCard(mileage101200);
       break;
     case "201000-300000":
       const mileage201300 = range(201000, 300000);
-      for (let i = 0; i < cards.length; i++) {
-        const mileage = cars[i].mileage;
-        if (mileage201300.indexOf(mileage) !== -1) {
-          cards[i].style.display = "block";
-        } else {
-          cards[i].style.display = "none";
-        }
-      }
+      showCard(mileage201300);
       break;
     case "301000-400000":
       const mileage301400 = range(301000, 400000);
-      for (let i = 0; i < cards.length; i++) {
-        const mileage = cars[i].mileage;
-        if (mileage301400.indexOf(mileage) !== -1) {
-          cards[i].style.display = "block";
-        } else {
-          cards[i].style.display = "none";
-        }
-      }
+      showCard(mileage301400);
       break;
   }
 });
+
+const showCard = (range) => {
+  for (let i = 0; i < cards.length; i++) {
+    const year = cars[i].mileage;
+    if (range.indexOf(year) !== -1) {
+      cards[i].style.display = "block";
+    } else {
+      cards[i].style.display = "none";
+    }
+  }
+};

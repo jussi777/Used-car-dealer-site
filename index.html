@@ -11,8 +11,8 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header>
@@ -54,54 +54,55 @@
           </div>
         </div>
       </nav>
-        <div class="landing mt-5">
-          <div class="home-wrap">
-            <div class="home-inner">
-            </div>
-            <h1 class="text-center">Najlepszy komis!</h1>
-          </div>
+      <div class="landing mt-5">
+        <div class="home-wrap">
+          <div class="home-inner"></div>
+          <h1 class="text-center">Najlepszy komis!</h1>
         </div>
       </div>
-      <div class="search-wrapper bg-light pb-5">
+      <div class="search-wrapper bg-light pb-5 container-fluid">
         <h5 class="px-3 pt-5">Twoje wyszukiwanie:</h5>
         <div class="row">
           <div class="col-lg-3">
             <div class="m-2">
-              <input type="text" class="form-control" id="brand-input" placeholder="Marka" aria-describedby="searchByBrand">
+              <input
+                type="text"
+                class="form-control"
+                id="brand-input"
+                placeholder="Marka"
+                aria-describedby="searchByBrand"
+              />
             </div>
           </div>
           <div class="col-lg-3">
-          <div class="wrapper-production-year d-flex m-2">
-            <select id="production-year" name="year" class="form-control">
-              <option value="production-year">Rok produkcji</option>
-              <option value="2005-2009">2005 - 2009</option>
-              <option value="2010-2014">2010 - 2014</option>
-              <option value="2015-2019">2015 - 2019</option>
-              <option value="2020-2022">2020 - 2022</option>
-            </select>
+            <div class="wrapper-production-year d-flex m-2">
+              <select id="production-year" name="year" class="form-control">
+                <option value="production-year">Rok produkcji</option>
+                <option value="2005-2009">2005 - 2009</option>
+                <option value="2010-2014">2010 - 2014</option>
+                <option value="2015-2019">2015 - 2019</option>
+                <option value="2020-2022">2020 - 2022</option>
+              </select>
+            </div>
           </div>
-        </div>
-        <div class="col-lg-3">
-          <div class="wrapper-mileage d-flex m-2">
-            <select id="mileage" name="mileage" class="form-control">
-              <option value="mileage">Przebieg</option>
-              <option value="50000-100000">50.000 - 100.000</option>
-              <option value="101000-200000">101.000 - 200.000</option>
-              <option value="201000-300000">201.000 - 300.000</option>
-              <option value="301000-400000">301.000 - 400.000</option>
-            </select>
+
+          <div class="col-lg-3">
+            <div class="wrapper-mileage d-flex m-2">
+              <select id="mileage" name="mileage" class="form-control">
+                <option value="mileage">Przebieg</option>
+                <option value="50000-100000">50.000 - 100.000</option>
+                <option value="101000-200000">101.000 - 200.000</option>
+                <option value="201000-300000">201.000 - 300.000</option>
+                <option value="301000-400000">301.000 - 400.000</option>
+              </select>
+            </div>
           </div>
-        </div>
-        <div class="col-lg-2">
-          <button class=" btn btn-warning w-100 m-2" id="searchBtn">Wyszukaj</button>
-        </div>
         </div>
       </div>
     </header>
     <main>
-      <div class="card-wrapper bg-light">
-      </div>
-      <div class="why-us-wrapper">
+      <section class="card-wrapper bg-light container-fluid"></section>
+      <section class="why-us-wrapper container-fluid">
         <p class="display-3 m-5 text-uppercase text-center">Dlaczego my?</p>
         <div class="row">
           <div class="col-lg-3 col-md-6">
@@ -141,31 +142,39 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="map-wrapper">
-        <p class="display-3 m-5 text-uppercase text-center">Jak do nas dojechać?</p>
+      </section>
+      <section class="map-wrapper container-fluid">
+        <p class="display-3 m-5 text-uppercase text-center">
+          Jak do nas dojechać?
+        </p>
         <div id="map"></div>
-      </div>
+      </section>
     </main>
-      <footer
-        class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-4 border-top bg-dark"
-      >
-        <div class="col-md-4 d-flex align-items-center">
-          <i class="fa fa-regular fa-fish"></i>
-          <span class="text-muted">© 2022 Ryba</span>
-        </div>
-        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex me-5">
-          <li class="ms-3">
-            <a href="https://www.facebook.com/"><i class="fa fa-brands fa-facebook"></i></a>
-          </li>
-          <li class="ms-3">
-            <a href="https://www.instagram.com/"><i class="fa fa-brands fa-instagram"></i></a>
-          </li>
-          <li class="ms-3">
-            <a href="https://twitter.com/?lang=pl"><i class="fa fa-brands fa-twitter"></i></a>
-          </li>
-        </ul>
-      </footer>
+    <footer
+      class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-4 border-top bg-dark"
+    >
+      <div class="col-md-4 d-flex align-items-center">
+        <i class="fa fa-regular fa-fish"></i>
+        <span class="text-muted">© 2022 Ryba</span>
+      </div>
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex me-5">
+        <li class="ms-3">
+          <a href="https://www.facebook.com/"
+            ><i class="fa fa-brands fa-facebook"></i
+          ></a>
+        </li>
+        <li class="ms-3">
+          <a href="https://www.instagram.com/"
+            ><i class="fa fa-brands fa-instagram"></i
+          ></a>
+        </li>
+        <li class="ms-3">
+          <a href="https://twitter.com/?lang=pl"
+            ><i class="fa fa-brands fa-twitter"></i
+          ></a>
+        </li>
+      </ul>
+    </footer>
     <script
       src="https://kit.fontawesome.com/93887f783c.js"
       crossorigin="anonymous"
