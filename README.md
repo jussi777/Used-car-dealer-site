@@ -38,8 +38,7 @@ List the ready features here:
 
 
 ## Screenshots
-![Example screenshot](./images/car site.png)
-<!-- If you have screenshots you'd like to share, include them here. -->
+![Example screenshot](Used-car-dealer-site/images/car site.png)
 
 
 ## Setup
