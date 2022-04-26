@@ -1,6 +1,8 @@
 # Used car dealer site
 > A site where you can buy a car. It's a project that I made during studies.
-> Live demo https://jussi777.github.io/Used-car-dealer-site/
+
+## Live Demo
+https://jussi777.github.io/Used-car-dealer-site/
 
 ## Table of Contents
 * [General Info](#general-information)
@@ -30,6 +32,7 @@
 ## Features
 List the ready features here:
 - select car
+- search car by brand, production year and mileage
 - add addition
 - form validation
 
@@ -53,27 +56,11 @@ Provide various use cases and code examples here.
 
 
 ## Project Status
-Project is: _in progress_ / _complete_ / _no longer being worked on_. If you are no longer working on it, provide reasons why.
+Project is: _in progress_
 
-
-## Room for Improvement
-Include areas you believe need improvement / could be improved. Also add TODOs for future development.
-
-Room for improvement:
-- Improvement to be done 1
-- Improvement to be done 2
-
-To do:
-- Feature to be added 1
-- Feature to be added 2
-
-
-## Acknowledgements
-Give credit here.
-- This project was inspired by...
-- This project was based on [this tutorial](https://www.example.com).
-- Many thanks to...
-
+## To do 
+- improve search section(search simultaneously by brand, year, mileage)
+- built rest of the pages from menu ("Jak to działa" and "Kontakt")
 
 ## Contact
-Created by [@flynerdpl](https://www.flynerd.pl/) - feel free to contact me!
+Created by Ryba aniaryb@gmail.com - feel free to contact me!
