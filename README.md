@@ -15,7 +15,7 @@ https://jussi777.github.io/Used-car-dealer-site/
 
 
 ## Screenshots
-![Example screenshot](https://github.com/jussi777/Used-car-dealer-site/blob/master/images/car%20site.png)
+![Example screenshot](https://github.com/jussi777/Used-car-dealer-site/blob/master/images/car%20dealer.png)
 
 ## What I've learned
 - how to use local storage to transfer data
